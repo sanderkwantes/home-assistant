@@ -1,0 +1,8 @@
+{
+  "domain": "comfoclime",
+  "name": "ComfoClime",
+  "codeowners": ["@sanderkwantes"],
+  "config_flow": true,
+  "documentation": "https://www.wildatheart.eu",
+  "iot_class": "local_polling"
+}

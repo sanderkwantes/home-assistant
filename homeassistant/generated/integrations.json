@@ -1003,6 +1003,12 @@
       "config_flow": true,
       "iot_class": "local_polling"
     },
+    "comfoclime": {
+      "name": "ComfoClime",
+      "integration_type": "hub",
+      "config_flow": true,
+      "iot_class": "local_polling"
+    },
     "comfoconnect": {
       "name": "Zehnder ComfoAir Q",
       "integration_type": "hub",

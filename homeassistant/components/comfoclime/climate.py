@@ -135,7 +135,7 @@ class ComfoClimeClimate(ClimateEntity):
         self._hvac_mode = HVACMode.HEAT
         self._preset_mode = "comfort"
         self._fan_modes = ["off", "low", "medium", "high"]
-        self._temperature_unit = UnitOfTemperature.CELSIUS
+        self._attr_temperature_unit = UnitOfTemperature.CELSIUS
         self._available = True
 
         """.Set the supported features without _attr_."""

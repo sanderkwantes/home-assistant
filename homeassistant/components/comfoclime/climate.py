@@ -135,9 +135,8 @@ class ComfoClimeClimate(ClimateEntity):
         self._hvac_mode = HVACMode.HEAT
         self._preset_mode = "comfort"
         self._fan_modes = ["off", "low", "medium", "high"]
-        self.temperature_unit = UnitOfTemperature.CELSIUS
+        self._temperature_unit = UnitOfTemperature.CELSIUS
         self._available = True
-        self.available = True
 
         """.Set the supported features without _attr_."""
         self.supported_features = (
@@ -191,7 +190,6 @@ class ComfoClimeClimate(ClimateEntity):
         _LOGGER.debug("Updating ComfoClime data")
         try:
             await self._fetch_clime_data()
-            self.available = True
             self._available = True
         except aiohttp.ClientError as e:
             _LOGGER.error("Update failed: %s", e)

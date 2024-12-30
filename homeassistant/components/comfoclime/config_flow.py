@@ -44,7 +44,7 @@ class ComfoClimeConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
         return self.async_show_form(
             step_id="user",
             data_schema=vol.Schema({vol.Required(CONF_IP_ADDRESS): str}),
-            errors={"base": "device_not_found"},
+            errors={"base": "ComfoClime not found on the local network"},
         )
 
     async def _test_connection(
